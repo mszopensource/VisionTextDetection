@@ -24,6 +24,7 @@
 		DA37CA6524758B00009963B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA37CA6824758B00009963B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA37CA6A24758B00009963B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA37CA7124758BA2009963B1 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 			children = (
 				DA37CA5B24758AFF009963B1 /* CoreML */,
 				DA37CA5A24758AFF009963B1 /* Products */,
+				DA37CA7024758BA2009963B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +67,14 @@
 				DA37CA6A24758B00009963B1 /* Info.plist */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		DA37CA7024758BA2009963B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA37CA7124758BA2009963B1 /* CoreML.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LFMJA3SC2;
 				INFOPLIST_FILE = CoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LFMJA3SC2;
 				INFOPLIST_FILE = CoreML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

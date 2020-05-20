@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         let documentCameraViewController = VNDocumentCameraViewController()
         documentCameraViewController.delegate = self
         present(documentCameraViewController, animated: true)
+        //Remove previously added layers
+        for layer in imageView.layer.sublayers ?? [] {
+            layer.removeFromSuperlayer()
+        }
     }
     
     func processImage(input: CGImage) {
